@@ -1,0 +1,64 @@
+<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+            <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h6 class="m-0 font-weight-bold text-primary">Statistik Sepanjang Tahun (12 Bulan Terakhir)</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <div class="chart-area pt-4 pb-2"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas id="myBarChart" width="480" height="288" style="display: block; width: 480px; height: 288px;" class="chartjs-render-monitor"></canvas>
+                        <script>
+                            Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+                            Chart.defaults.global.defaultFontColor = '#858796';
+
+                            var ctz = document.getElementById("myBarChart");
+                            var chart = new Chart(ctz, {
+                                type: 'bar', // bisa juga horizontalBar
+
+                                data: {
+                                    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"],
+                                    datasets: [{
+                                        label: "Surat Masuk",
+                                        backgroundColor: 'rgb(78,115,223)',
+                                        hoverBackgroundColor: '#2e59d9',
+                                        data: [
+                                            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                        ]
+                                    }, {
+                                        label: "Surat Keluar",
+                                        backgroundColor: 'rgb(28,200,138)',
+                                        hoverBackgroundColor: 'rgba(22, 160, 133, 1)',
+                                        data: [
+                                            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0                                        ]
+                                    }]
+                                },
+
+                                options: {
+                                    maintainAspectRatio: false,
+                                    tooltips: {
+                                        mode: 'index',
+                                    },
+                                    scales: {
+                                        xAxes: [{
+                                            stacked: true, // buat false untuk horizontal Bar
+                                        }],
+                                        yAxes: [{
+                                            stacked: true,
+                                            ticks: {
+                                                beginAtZero: true,
+                                                callback: function(value) {
+                                                    if (Number.isInteger(value)) {
+                                                        return value;
+                                                    }
+                                                },
+                                                stepSize: 1
+                                            }
+                                        }]
+                                    }
+                                }
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>

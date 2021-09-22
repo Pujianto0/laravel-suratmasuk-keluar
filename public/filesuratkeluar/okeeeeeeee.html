@@ -1,0 +1,479 @@
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>My Profile</title>
+  
+    <!-- jQuery -->
+    <script src="https://sipas.skuyservice.com/assets/js/jquery-3.4.1.min.js"></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+  
+    <!-- Custom fonts for this template-->
+    <link href="https://sipas.skuyservice.com//assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  
+    <!-- DataTables -->
+    <link href="https://sipas.skuyservice.com/assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://sipas.skuyservice.com/assets/vendor/datatables/buttons.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://sipas.skuyservice.com/assets/vendor/datatables/responsive.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/rowreorder/1.2.7/css/rowReorder.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.dataTables.min.css" rel="stylesheet">
+  
+    <!-- Sweet Alert 2 -->
+    <link rel="stylesheet" href="https://sipas.skuyservice.com/assets/vendor/sweetalert/sweetalert2.min.css">
+  
+    <!-- Custom styles for this template-->
+    <link href="https://sipas.skuyservice.com//assets/css/sb-admin-2.min.css" rel="stylesheet">
+  
+    <!-- Style -->
+    <link href="https://sipas.skuyservice.com//assets/css/custom.css" rel="stylesheet">
+  
+  </head>
+  
+  <body id="page-top" class="" style="">
+  
+    <!-- Page Wrapper -->
+    <div id="wrapper"><!-- Sidebar -->
+  <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+      <div class="sidebar-brand-icon">
+        <i class="fas fa-mail-bulk"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">SIPAS <sup>v1</sup></div>
+    </a>
+  
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Admin
+    </div>
+  
+    
+      <!-- Nav Item - Pages Collapse Menu Blog -->
+      <li class="nav-item ">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePengaturan" aria-expanded="true" aria-controls="collapsePengaturan">
+          <i class="fas fa-fw fa-cogs"></i>
+          <span>Pengaturan</span>
+        </a>
+        <div id="collapsePengaturan" class="collapse" aria-labelledby="headingPengaturan" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="https://sipas.skuyservice.com/pengaturan/role">Role</a>
+            <a class="collapse-item" href="https://sipas.skuyservice.com/pengaturan/pengguna">Pengguna</a>
+            <a class="collapse-item" href="https://sipas.skuyservice.com/pengaturan/klasifikasi">Klasifikasi</a>
+            <a class="collapse-item" href="https://sipas.skuyservice.com/pengaturan/sifat">Sifat Surat</a>
+          </div>
+        </div>
+      </li>
+    
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+  
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Staff
+    </div>
+  
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item ">
+      <a class="nav-link pb-0" href="https://sipas.skuyservice.com/home/index">
+        <i class="fas fa-fw fa-chart-bar"></i>
+        <span>Dashboard</span></a>
+    </li>
+  
+    <!-- Nav Item - Pages Collapse Menu Blog -->
+    <li class="nav-item ">
+      <a class="nav-link pb-0 collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <i class="fas fa-fw fa-mail-bulk"></i>
+        <span>Transaksi Surat</span>
+      </a>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <a class="collapse-item" href="https://sipas.skuyservice.com/surat-masuk">Surat Masuk</a>
+          <a class="collapse-item" href="https://sipas.skuyservice.com/surat-keluar">Surat Keluar</a>
+        </div>
+      </div>
+    </li>
+  
+    <!-- Nav Item - Pages Collapse Menu Blog -->
+    <li class="nav-item ">
+      <a class=" nav-link pb-0 collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fas fa-fw fa-book "></i>
+        <span>Laporan</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <a class="collapse-item" href="https://sipas.skuyservice.com/laporan/surat-masuk">Surat Masuk</a>
+          <a class="collapse-item" href="https://sipas.skuyservice.com/laporan/surat-keluar">Surat Keluar</a>
+        </div>
+      </div>
+    </li>
+  
+    <li class="nav-item active">
+      <a class=" nav-link collapsed pb-0" href="https://sipas.skuyservice.com/user">
+        <i class="fas fa-fw fa-user"></i>
+        <span>User Profile</span>
+      </a>
+    </li>
+  
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="modal" data-target="#logoutModal">
+        <i class="fas fa-fw fa-sign-out-alt"></i>
+        <span>Logout</span>
+      </a>
+    </li>
+  
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+  
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button aria-label="toggler" class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+  
+  </ul>
+  <!-- End of Sidebar --><!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+  
+    <!-- Main Content -->
+    <div id="content">
+  
+      <!-- Topbar -->
+      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+  
+        <!-- Sidebar Toggle (Topbar) -->
+        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <i class="fa fa-bars"></i>
+        </button>
+  
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+  
+          <div class="topbar-divider d-none d-sm-block"></div>
+  
+          <!-- Nav Item - User Information -->
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="mr-2 d-none d-lg-inline text-gray-800 small">admin123</span>
+              <img class="img-profile rounded-circle" alt="image-profile" src="https://sipas.skuyservice.com/assets/img/profile/img1.jpg">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-sign-out-alt fa-sm fa-fw text-gray-400"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+  
+        </ul>
+  
+      </nav>
+      <!-- End of Topbar --><!-- Begin Page Content -->
+  <div class="container-fluid mb-5">
+  
+      <!-- Page Heading -->
+      <h1 class="h3 text-gray-800">My Profile</h1>
+  
+      <div class="row">
+          <div class="col-md-4 col-sm-12">
+  
+              <!-- Flash data -->
+              
+          </div>
+      </div>
+  
+      <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="card shadow-sm">
+                  <div class="card-body">
+                      <img src="https://sipas.skuyservice.com/assets/img/profile/img1.jpg" alt="profile" class="card-img-top rounded mt-0 mb-3 mx-auto" width="320" height="240">
+                      <h4 class="card-title text-center font-weight-bold">admin123</h4>
+                      <h5 class="card-title text-center mb-0">admin@gmail.com</h5>
+                      <p class="card-text text-center">Bergabung sejak. 28 Jul 2020</p>
+                      <button type="button" data-toggle="modal" data-target="#profileModal" class="btn btn-primary btn-block btn-modal" id="btn-ubah" data-id="1">Update Profile</button>
+                      <button type="button" data-toggle="modal" data-target="#passwordModal" class="btn btn-success btn-block btn-modal">Change Password</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Modal -->
+      <div class="modal fade" id="profileModal" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header badge-primary">
+                      <h5 class="modal-title" id="profileModalTitle">Form Ubah My Profile</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <form action="https://sipas.skuyservice.com/user/update_profile" id="formUserUpdate" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                  <div class="modal-body pb-0">
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" name="email" id="email" class="form-control shadow-sm" readonly="">
+                      </div>
+                      <div class="form-group">
+                          <label for="username">Username</label>
+                          <input type="text" name="username" id="username" class="form-control shadow-sm" placeholder="masukkan username">
+                          <div class="invalid-feedback"></div>
+                      </div>
+                      <div class="form-group row">
+                          <div class="col-4">
+                              <div class="form-group">
+                                  <label>Gambar</label>
+                                  <img src="https://sipas.skuyservice.com/assets/img/profile/img1.jpg" id="output_image" height="120" width="150" class="shadow-sm p-2 rounded-sm">
+                              </div>
+                          </div>
+                          <div class="col-8">
+                              <label for="image">Upload gambar</label>
+                              <input type="file" name="image" id="image" class="p-1 form-control" onchange="preview_image(event)">
+                              <div class="invalid-feedback"></div>
+                              <div class="alert-info mt-1 pb-1 rounded text-center">
+                                  <small>File dengan format .png, .jpg, .svg - maks. 512kb</small>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary btn-update-user">Update</button>
+                  </div>
+                  </form>            </div>
+          </div>
+      </div>
+  
+      <div class="modal fade" id="passwordModal" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header badge-primary">
+                      <h5 class="modal-title" id="passwordModalTitle">Form Ubah Password</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <form action="https://sipas.skuyservice.com/user/update_password" id="formUpdatePassword" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                  <div class="modal-body pb-0">
+                      <div class="form-group">
+                          <label for="password">Password Lama</label>
+                          <input type="password" name="password" id="password" class="form-control shadow-sm" value="">
+                          <div class="invalid-feedback"></div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="newpass">Password Baru</label>
+                          <input type="password" name="newpass" id="newpass" class="form-control" value="">
+                          <div class="invalid-feedback"></div>
+                      </div>
+  
+                      <div class="form-group">
+                          <label for="newpass2">Konfirmasi Password</label>
+                          <input type="password" name="newpass2" id="newpass2" class="form-control shadow-sm">
+                          <div class="invalid-feedback"></div>
+                      </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary btn-update-pass">Update</button>
+                  </div>
+                  </form>            </div>
+          </div>
+      </div>
+  
+  </div>
+  <!-- /.container-fluid -->
+  
+  </div>
+  <!-- End of Main Content -->
+  
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://sipas.skuyservice.com/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="https://sipas.skuyservice.com/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Core plugin JavaScript-->
+  <script src="https://sipas.skuyservice.com/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+  <!-- Custom scripts for all pages-->
+  <script src="https://sipas.skuyservice.com/assets/js/sb-admin-2.min.js"></script>
+  
+  <script>
+      $(document).ready(function() {
+          // Upload file (name)
+          $('.custom-file-input').on('change', function() {
+              let fileName = $(this).val().split('\\').pop();
+              $(this).next('.custom-file-label').addClass("selected").html(fileName);
+          });
+  
+          // Preview Gambar
+          function preview_image(event) {
+              var reader = new FileReader();
+              reader.onload = function() {
+                  var output = document.getElementById('output_image');
+                  output.src = reader.result;
+              }
+              reader.readAsDataURL(event.target.files[0]);
+          }
+  
+          $(".btn-modal").click(function() {
+              $('form:eq(1)')[0].reset()
+              $("#image").val(null)
+              $(".is-valid").removeClass("is-valid")
+              $(".is-invalid").removeClass("is-invalid")
+          })
+  
+          $("#btn-ubah").click(function() {
+              var id = $(this).data('id')
+  
+              $.ajax({
+                  url: "https://sipas.skuyservice.com/user/get_user_data",
+                  type: "POST",
+                  dataType: "JSON",
+                  data: {
+                      id: id
+                  },
+                  success: function(data) {
+                      console.log(data)
+                      $(".modal-body #email").val(data.email)
+                      $(".modal-body #username").val(data.username)
+                  },
+                  error: function(jqXHR, textStatus, errorThrown) {
+                      alert('Internal Error');
+                  }
+              });
+          })
+  
+          $("#formUserUpdate").submit(function(e) {
+              e.preventDefault()
+              
+              alert("Upgrade to premium account")
+  
+              // var userData = new FormData(this)
+              // $.ajax({
+              //     url: $(this).attr('action'),
+              //     type: $(this).attr('method'),
+              //     dataType: 'json',
+              //     data: userData,
+              //     contentType: false,
+              //     cache: false,
+              //     processData: false,
+              //     beforeSend: function() {
+              //         $('.btn-update-user').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> <i>Loading...</i>')
+              //     },
+              //     complete: function() {
+              //         $('.btn-update-user').html('Update')
+              //     },
+              //     success: function(res) {
+              //         if (res.status) {
+              //             location.reload()
+              //         } else {
+              //             $.each(res.errors, function(key, value) {
+              //                 $('[name="' + key + '"]').addClass('is-invalid');
+              //                 $('[name="' + key + '"]').next().text(value);
+              //                 if (value == "") {
+              //                     $('[name="' + key + '"]').removeClass('is-invalid');
+              //                     $('[name="' + key + '"]').addClass('is-valid');
+              //                 }
+              //             })
+              //         }
+              //     },
+              //     error: function() {
+  
+              //     }
+              // })
+  
+              // $("#formUserUpdate input").on("keyup", function() {
+              //     $(this).removeClass("is-valid is-invalid");
+              // })
+  
+          })
+  
+          $("#formUpdatePassword").submit(function(e) {
+              e.preventDefault()
+              
+              alert("Upgrade to premium account")
+  
+              // var userData = new FormData(this)
+              // $.ajax({
+              //     url: $(this).attr('action'),
+              //     type: $(this).attr('method'),
+              //     dataType: 'json',
+              //     data: userData,
+              //     contentType: false,
+              //     cache: false,
+              //     processData: false,
+              //     beforeSend: function() {
+              //         $('.btn-update-pass').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> <i>Loading...</i>')
+              //     },
+              //     complete: function() {
+              //         $('.btn-update-pass').html('Update')
+              //     },
+              //     success: function(res) {
+              //         if (res.status) {
+              //             location.reload()
+              //         } else {
+              //             $.each(res.errors, function(key, value) {
+              //                 $('[name="' + key + '"]').addClass('is-invalid');
+              //                 $('[name="' + key + '"]').next().text(value);
+              //                 if (value == "") {
+              //                     $('[name="' + key + '"]').removeClass('is-invalid');
+              //                     $('[name="' + key + '"]').addClass('is-valid');
+              //                 }
+              //             })
+              //         }
+              //     },
+              //     error: function() {
+  
+              //     }
+              // })
+  
+              // $("#formUpdatePassword input").on("keyup", function() {
+              //     $(this).removeClass("is-valid is-invalid");
+              // })
+  
+          })
+      })
+  </script><!-- Footer -->
+  <footer class="sticky-footer bg-white">
+      <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+              <span>Copyright © Skuy Ngoding 2021</span>
+          </div>
+      </div>
+  </footer>
+  <!-- End of Footer -->
+  
+  </div>
+  <!-- End of Content Wrapper -->
+  
+  </div>
+  <!-- End of Page Wrapper -->
+  
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+  </a>
+  
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header badge-primary">
+                  <h5 class="modal-title" id="logoutModalLabel">Yakin ingin keluar?</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                  </button>
+              </div>
+              <div class="modal-body">Klik "logout" jika ingin mengakhiri sesi ini.</div>
+              <div class="modal-footer">
+                  <button class="btn btn-danger" type="button" data-dismiss="modal">Batal</button>
+                  <a class="btn btn-primary" href="https://sipas.skuyservice.com/auth/logout">Logout</a>
+              </div>
+          </div>
+      </div>
+  </div></body></html>
