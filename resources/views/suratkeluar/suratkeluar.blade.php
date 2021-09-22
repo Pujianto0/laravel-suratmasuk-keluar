@@ -109,10 +109,10 @@
     <i class="fa fa-fw fa-list"></i>
   </button>
 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-<li><a  class="dropdown-item" href="/tampilkandata1/{{ $row->id }}" >Update</a></li>
-<li> <a class="dropdown-item" href="#" data-id="{{$row->id}}" data-nosurat="{{ $row->nosurat }}">Hapus</a></li>
-<li>  <a class="dropdown-item" href="/exportpdf12/{{$row->id}}">Export PDF</a></li>
-    </ul>
+    <li><a class="dropdown-item" href="/tampilkandata1/{{ $row->id }}">Update</a></li>
+    <li><a class="dropdown-item" href="/exportpdf12/{{$row->id}}">Export PDF</a></li>
+    <li><a class="dropdown-item delete" href="#" data-id="{{$row->id}}" data-nosurat="{{ $row->nosurat }}">Hapus</a></li>
+  </ul>
 </div>
 
 

@@ -30,9 +30,9 @@
             <li><a class="treeview-item" href="{{asset('template/form-notifications.html')}}"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
           </ul>
         </li> -->
-         <li><a class="app-menu__item " href="/home" ><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item " href="/home" ><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li><a class="app-menu__item " href="/suratmasuk"><i class="app-menu__icon fa fa-envelope-o"></i><span class="app-menu__label">Surat Masuk</span></a></li>
-        <li><a class="app-menu__item active" href="/suratkeluar"><i class="app-menu__iconfa fa-envelope-open-o"></i><span class="app-menu__label">Surat Keluar</span></a></li>
+        <li><a class="app-menu__item active" href="/suratkeluar"><i class="app-menu__icon fa fa-envelope-open-o"></i><span class="app-menu__label">Surat Keluar</span></a></li>
           <!-- <ul class="treeview-menu">
             <li><a class="treeview-item" href="{{asset('template/table-basic.html')}}"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
             <li><a class="treeview-item" href="{{asset('template/table-data-table.html')}}"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
